@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Michal Mucha — CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Silkscreen&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:0}
+:root{--bg:#0c0c0d;--panel:#151517;--line:#26262a;--dim:#8a8a92;--text:#ededed;--soft:#c4c4ca;--acc:#c4f54e;--ink:#0d1200}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+body{width:210mm;height:297mm;overflow:hidden;color:var(--text);font:400 8.3pt/1.48 Geist,system-ui,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{position:relative;height:100%;padding:13mm 13mm 11mm}
+.lbl{font:500 6.6pt/1.4 "Geist Mono",monospace;text-transform:uppercase;letter-spacing:.09em}
+.dim{color:var(--dim)}
+.acc{color:var(--acc)}
+.notch{--n:7px;clip-path:polygon(var(--n) 0,calc(100% - var(--n)) 0,calc(100% - var(--n)) var(--n),100% var(--n),100% calc(100% - var(--n)),calc(100% - var(--n)) calc(100% - var(--n)),calc(100% - var(--n)) 100%,var(--n) 100%,var(--n) calc(100% - var(--n)),0 calc(100% - var(--n)),0 var(--n),var(--n) var(--n))}
+
+header{display:grid;grid-template-columns:1fr auto;gap:10mm;align-items:center;padding-bottom:5.5mm;border-bottom:1px solid var(--line)}
+h1{font:500 30pt/1 Geist,sans-serif;letter-spacing:-.045em}
+.role{font-size:12pt;color:var(--soft);letter-spacing:-.015em;margin:2mm 0 3.5mm}
+.summary{color:var(--soft);max-width:118mm;font-size:8.8pt}
+.contact{display:flex;flex-wrap:wrap;gap:1.6mm 5mm;margin-top:4.5mm}
+.contact span{display:flex;gap:1.6mm}
+.contact b{font-weight:500;color:var(--dim)}
+.photo{width:46mm;height:46mm;position:relative}
+.photo img{position:absolute;inset:5.6mm;width:34.8mm;height:34.8mm;border-radius:50%;object-fit:cover}
+.photo svg{position:absolute;inset:0;width:100%;height:100%}
+
+.cols{display:grid;grid-template-columns:1fr 63mm;gap:8mm;margin-top:6mm}
+h2{display:flex;align-items:center;gap:2.5mm;margin:0 0 3.5mm}
+h2 .n{font:400 7pt/1 Silkscreen,monospace;color:var(--acc)}
+h2 .t{font:500 6.8pt/1 "Geist Mono",monospace;text-transform:uppercase;letter-spacing:.1em}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+section+section{margin-top:5mm}
+
+.job{position:relative;padding-left:5mm;padding-bottom:3.4mm}
+.job::before{content:"";position:absolute;left:0;top:1.3mm;width:1.8mm;height:1.8mm;background:var(--acc)}
+.job::after{content:"";position:absolute;left:.85mm;top:4mm;bottom:0;width:1px;background:var(--line)}
+.job:last-child{padding-bottom:0}
+.job:last-child::after{display:none}
+.jh{display:flex;justify-content:space-between;gap:4mm;align-items:baseline}
+.jh h3{font:500 10.2pt/1.25 Geist,sans-serif;letter-spacing:-.015em}
+.org{margin:.6mm 0 1.6mm}
+ul{list-style:none}
+.job li{position:relative;padding-left:3.2mm;color:var(--soft);margin-top:.7mm}
+.job li::before{content:"";position:absolute;left:0;top:1.75mm;width:1mm;height:1mm;background:#5d6b3a}
+
+.edu{display:grid;gap:3mm}
+.edu .row{display:flex;justify-content:space-between;gap:4mm;align-items:baseline}
+.edu h3{font:500 9.4pt/1.3 Geist,sans-serif}
+
+.proj{display:grid;gap:2.6mm}
+.proj .p{display:grid;grid-template-columns:11mm 1fr;gap:3mm}
+.proj h3{font:500 9.4pt/1.3 Geist,sans-serif}
+.proj p{color:var(--soft)}
+.badge{display:inline-block;background:var(--acc);color:var(--ink);padding:.5mm 1.6mm;margin-top:1.2mm}
+
+aside .box{background:var(--panel);padding:3.6mm 4.4mm}
+aside .box+.box{margin-top:2.8mm}
+aside h2{margin-bottom:3mm}
+.sk{display:grid;gap:2.4mm}
+.sk .g{display:grid;gap:1.2mm}
+.tags{display:flex;flex-wrap:wrap;gap:1.1mm}
+.tags span{font:500 6.4pt/1 "Geist Mono",monospace;text-transform:uppercase;letter-spacing:.06em;border:1px solid #2e2e33;padding:1.2mm 1.6mm;color:var(--text)}
+.tags .l{border-style:dashed;color:var(--dim)}
+.kv li{display:flex;justify-content:space-between;gap:3mm;padding:1.3mm 0;border-top:1px solid var(--line)}
+.kv li:first-child{border-top:0;padding-top:0}
+.quote{background:var(--acc)!important;color:var(--ink)}
+.quote h2 .n,.quote h2 .t{color:var(--ink)}
+.quote h2::after{background:rgba(13,18,0,.25)}
+.quote p{font:500 8.8pt/1.4 Geist,sans-serif;letter-spacing:-.01em}
+.quote .by{margin-top:2.5mm}
+footer{position:absolute;left:13mm;right:13mm;bottom:8mm;display:flex;justify-content:space-between;color:#4a4a50}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <h1>Michal Mucha</h1>
+      <div class="role">Full-stack software engineer</div>
+      <p class="summary">Full-stack software engineer from Slovakia, based in the Netherlands. I build production websites and web applications with React, Next.js and Node.js, from the interface to the APIs and servers behind it. I combine a part-time developer role with a BSc in Software Engineering, and I am currently focusing on cyber security.</p>
+      <div class="contact lbl">
+        <span><b>Email</b>muchamichal@proton.me</span>
+        <span><b>Phone</b>+31 6 16 62 39 36</span>
+        <span><b>Location</b>Netherlands</span>
+        <span><b>GitHub</b>github.com/Inspiractus01</span>
+        <span><b>LinkedIn</b>linkedin.com/in/michal-mucha-5734aa275</span>
+      </div>
+    </div>
+    <div class="photo"><img src="../img/me.jpg" alt=""><svg id="ring" viewBox="0 0 100 100" shape-rendering="crispEdges"></svg></div>
+  </header>
+
+  <div class="cols">
+    <main>
+      <section>
+        <h2><span class="n">01</span><span class="t">Experience</span></h2>
+        <div class="job">
+          <div class="jh"><h3>Full-Stack Developer</h3><span class="lbl dim">Mar 2025 — Present</span></div>
+          <div class="org lbl acc">Instance Studio · Part-time · Arnhem, NL</div>
+          <ul>
+            <li>Build and maintain production websites and web applications with Next.js and a headless CMS.</li>
+            <li>Develop Shopify-integrated storefronts and custom front-end features for client brands.</li>
+            <li>Work across the stack, from data modelling to the interface.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="jh"><h3>Frontend Developer</h3><span class="lbl dim">Jun 2024 — Aug 2024</span></div>
+          <div class="org lbl acc">BOOTIQ, BiQ Group · Contract · Bratislava, SK</div>
+          <ul>
+            <li>Delivered features across DPD Slovakia's CashApp: mobile app, web platform, admin tools and payment gateway.</li>
+            <li>Built a Shopify-integrated e-commerce site in React for Rezztek.</li>
+            <li>Developed supporting APIs in PHP and Node.js and managed SQL data storage.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="jh"><h3>Frontend Developer Intern</h3><span class="lbl dim">Aug 2023 — Oct 2023</span></div>
+          <div class="org lbl acc">BOOTIQ, BiQ Group · Bratislava, SK</div>
+          <ul>
+            <li>Built responsive client interfaces, including Curaprox, with React and TypeScript.</li>
+            <li>Integrated SQL back-ends and resolved UI performance issues.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="n">02</span><span class="t">Education</span></h2>
+        <div class="edu">
+          <div><div class="row"><h3>BSc Computer Software Engineering</h3><span class="lbl dim">2024 — 2028</span></div><div class="lbl dim">Saxion University of Applied Sciences · Deventer, NL</div></div>
+          <div><div class="row"><h3>Secondary education</h3><span class="lbl dim">2020 — 2024</span></div><div class="lbl dim">Gymnázium Poprad · Slovakia</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="n">03</span><span class="t">Projects</span></h2>
+        <div class="proj">
+          <div class="p"><div class="lbl dim">2023</div><div><h3>LeafLoop</h3><p>AI-driven smart flowerpot. A camera identifies the plant, AI builds its care profile and the pot adapts to it, tracking humidity, light, temperature and water level. Hardware, mobile app, web library and a custom AI chatbot connected through my own REST API.</p><span class="badge lbl">1st place · Telekom Enter Programiáda</span></div></div>
+          <div class="p"><div class="lbl dim">2026</div><div><h3>Mellow</h3><p>macOS menu bar app in Swift that warms, softens and dims the screen in the evening, with its own website.</p></div></div>
+          <div class="p"><div class="lbl dim">Tools</div><div><h3>zipp, superfind, bemlens</h3><p>Backup manager in Go and two VS Code extensions for code search and BEM/SCSS navigation.</p></div></div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <div class="box notch">
+        <h2><span class="n">04</span><span class="t">Skills</span></h2>
+        <div class="sk">
+          <div class="g"><span class="lbl dim">Languages</span><div class="tags"><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>Java</span><span>Go</span><span>C / C++</span><span>SQL</span><span>PHP</span><span class="l">Swift</span></div></div>
+          <div class="g"><span class="lbl dim">Web</span><div class="tags"><span>React</span><span>Next.js</span><span>Node.js</span><span>Shopify</span><span>HTML / CSS</span></div></div>
+          <div class="g"><span class="lbl dim">Data & infrastructure</span><div class="tags"><span>MongoDB</span><span>AWS</span><span>Docker</span><span>Linux</span><span>Git</span></div></div>
+          <div class="g"><span class="lbl dim">AI & process</span><div class="tags"><span>LLM APIs</span><span>Claude</span><span>Agile / Scrum</span></div></div>
+        </div>
+      </div>
+      <div class="box notch">
+        <h2><span class="n">05</span><span class="t">Languages</span></h2>
+        <ul class="kv lbl">
+          <li><span>English</span><span class="dim">Fluent</span></li>
+          <li><span>Slovak</span><span class="dim">Native</span></li>
+          <li><span>Czech</span><span class="dim">Fluent</span></li>
+          <li><span>German</span><span class="dim">Basic</span></li>
+        </ul>
+      </div>
+      <div class="box notch">
+        <h2><span class="n">06</span><span class="t">Recognition</span></h2>
+        <ul class="kv lbl">
+          <li><span>1st place, Telekom Enter Programiáda</span><span class="dim">2023</span></li>
+          <li><span>Member, Mensa Slovensko</span><span class="dim"></span></li>
+          <li><span>Current focus</span><span class="acc">Cyber security</span></li>
+        </ul>
+      </div>
+      <div class="box notch quote">
+        <h2><span class="n">07</span><span class="t">Reference</span></h2>
+        <p>“Michal is a fast learner, able to pick up new tools and frameworks with remarkable speed and precision. However challenging the task, he stays focused on delivering value.”</p>
+        <div class="by lbl">Radoslav Ciglansky · Tribe Leader, BOOTIQ</div>
+      </div>
+    </aside>
+  </div>
+</div>
+<script>
+const ring = document.getElementById("ring"), N = 44;
+ring.innerHTML = Array.from({length: N}, (_, i) => {
+  const a = i / N * Math.PI * 2 - Math.PI / 2, x = 50 + Math.cos(a) * 46, y = 50 + Math.sin(a) * 46;
+  const lit = i % 11 < 3;
+  return `<rect x="${(x - 1.6).toFixed(2)}" y="${(y - 1.6).toFixed(2)}" width="3.2" height="3.2" fill="${lit ? "#c4f54e" : "#2e2e33"}" transform="rotate(${(a * 180 / Math.PI).toFixed(1)} ${x.toFixed(2)} ${y.toFixed(2)})"/>`;
+}).join("");
+</script>
+</body>
+</html>
